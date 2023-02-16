@@ -8,9 +8,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'Access to specific VPC Endpoint only Bucket',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/yicr/secure-specific-vpc-only-bucket.git',
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: [
+    '@yicr/secure-bucket',
+  ],
+  peerDeps: [
+    '@yicr/secure-bucket',
+  ],
 });
 project.synth();
