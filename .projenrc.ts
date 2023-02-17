@@ -6,6 +6,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   name: '@yicr/secure-specific-vpc-only-bucket',
   description: 'Access to specific VPC Endpoint only Bucket',
+  keywords: ['aws', 'cdk', 'aws-cdk', 's3', 'bucket', 'vpc', 'endpoint', 'vpce'],
   projenrcTs: true,
   repositoryUrl: 'https://github.com/yicr/secure-specific-vpc-only-bucket.git',
   deps: [
@@ -14,5 +15,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
   peerDeps: [
     '@yicr/secure-bucket',
   ],
+  depsUpgradeOptions: {
+    workflowOptions: {
+      labels: ['auto-approve', 'auto-merge'],
+    },
+  },
+  autoApproveOptions: {
+    secret: 'GITHUB_TOKEN',
+    allowedUsernames: ['yicr'],
+  },
 });
 project.synth();

@@ -67,7 +67,14 @@
     "@yicr/secure-bucket": "^0.1.18"
   },
   "keywords": [
-    "cdk"
+    "aws",
+    "aws-cdk",
+    "bucket",
+    "cdk",
+    "endpoint",
+    "s3",
+    "vpc",
+    "vpce"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
