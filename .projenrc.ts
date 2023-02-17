@@ -1,4 +1,4 @@
-import { awscdk } from 'projen';
+import { awscdk, javascript } from 'projen';
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'yicr',
   authorAddress: 'yicr@users.noreply.github.com',
@@ -9,6 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'aws-cdk', 's3', 'bucket', 'vpc', 'endpoint', 'vpce'],
   projenrcTs: true,
   repositoryUrl: 'https://github.com/yicr/secure-specific-vpc-only-bucket.git',
+  npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
     '@yicr/secure-bucket',
   ],
