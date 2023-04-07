@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SecureSpecificVpcOnlyBucket Testing Should match snapshot: default-secure-bucket 1`] = `
+exports[`SecureVpcBucket Testing Should match snapshot: default-secure-bucket 1`] = `
 Object {
   "Parameters": Object {
     "BootstrapVersion": Object {
@@ -10,7 +10,7 @@ Object {
     },
   },
   "Resources": Object {
-    "SecureSpecificVpcOnlyBucketCFF876A7": Object {
+    "SecureVpcBucketD45FCAF5": Object {
       "DeletionPolicy": "Retain",
       "Properties": Object {
         "AccessControl": "Private",
@@ -36,10 +36,10 @@ Object {
       "Type": "AWS::S3::Bucket",
       "UpdateReplacePolicy": "Retain",
     },
-    "SecureSpecificVpcOnlyBucketPolicy97747EE4": Object {
+    "SecureVpcBucketPolicy7D3A7993": Object {
       "Properties": Object {
         "Bucket": Object {
-          "Ref": "SecureSpecificVpcOnlyBucketCFF876A7",
+          "Ref": "SecureVpcBucketD45FCAF5",
         },
         "PolicyDocument": Object {
           "Statement": Array [
@@ -57,7 +57,7 @@ Object {
               "Resource": Array [
                 Object {
                   "Fn::GetAtt": Array [
-                    "SecureSpecificVpcOnlyBucketCFF876A7",
+                    "SecureVpcBucketD45FCAF5",
                     "Arn",
                   ],
                 },
@@ -67,7 +67,7 @@ Object {
                     Array [
                       Object {
                         "Fn::GetAtt": Array [
-                          "SecureSpecificVpcOnlyBucketCFF876A7",
+                          "SecureVpcBucketD45FCAF5",
                           "Arn",
                         ],
                       },
@@ -91,7 +91,7 @@ Object {
               "Resource": Array [
                 Object {
                   "Fn::GetAtt": Array [
-                    "SecureSpecificVpcOnlyBucketCFF876A7",
+                    "SecureVpcBucketD45FCAF5",
                     "Arn",
                   ],
                 },
@@ -101,7 +101,7 @@ Object {
                     Array [
                       Object {
                         "Fn::GetAtt": Array [
-                          "SecureSpecificVpcOnlyBucketCFF876A7",
+                          "SecureVpcBucketD45FCAF5",
                           "Arn",
                         ],
                       },
