@@ -1,17 +1,17 @@
-# Secure Specific VPC only Bucket
+# AWS Secure VPC Bucket
 
-Access to specific VPC Endpoint only Bucket
+Access from specific VPC Endpoint only Bucket
 
 ## Install
 
 ### TypeScript
 
 ```shell
-npm install @yicr/secure-specific-vpc-only-bucket
+npm install @yicr/aws-secure-vpc-bucket
 ```
 or
 ```shell
-yarn add @yicr/secure-specific-vpc-only-bucket
+yarn add @yicr/aws-secure-vpc-bucket
 ```
 
 ## Example
@@ -19,15 +19,19 @@ yarn add @yicr/secure-specific-vpc-only-bucket
 ### TypeScript
 
 ```shell
-npm install @yicr/secure-specific-vpc-only-bucket
+npm install @yicr/aws-secure-vpc-bucket
 ```
 
 ```typescript
-import { SecureSpecificVpcOnlyBucket } from '@yicr/secure-specific-vpc-only-bucket';
+import { SecureSpecificVpcOnlyBucket } from '@yicr/aws-secure-vpc-bucket';
 
-new SecureSpecificVpcOnlyBucket(stack, 'SecureSpecificVpcOnlyBucket', {
+new SecureVpcBucket(stack, 'SecureVpcBucket', {
   bucketName: 'example-origin-bucket',
-  vpcEndpointId: 'vpce-0xxxxxxxxxxxxxxxx', // created vpc endpoint id
+  vpcEndpointId: 'vpce-0xxxxxxxxxxxxxxxx', // allready created vpc endpoint id
 });
 
 ```
+
+## License
+
+This project is licensed under the Apache-2.0 License.

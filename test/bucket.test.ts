@@ -1,9 +1,9 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { Match, Template } from 'aws-cdk-lib/assertions';
 import * as s3 from 'aws-cdk-lib/aws-s3';
-import { SecureSpecificVpcOnlyBucket } from '../src';
+import { SecureVpcBucket } from '../src';
 
-describe('SecureSpecificVpcOnlyBucket Testing', () => {
+describe('SecureVpcBucket Testing', () => {
 
   const app = new App();
   const stack = new Stack(app, 'TestingStack', {
@@ -15,7 +15,7 @@ describe('SecureSpecificVpcOnlyBucket Testing', () => {
 
   const vpcEndpointId = '';
 
-  const bucket = new SecureSpecificVpcOnlyBucket(stack, 'SecureSpecificVpcOnlyBucket', {
+  const bucket = new SecureVpcBucket(stack, 'SecureVpcBucket', {
     vpcEndpointId,
   });
 
@@ -42,7 +42,7 @@ describe('SecureSpecificVpcOnlyBucket Testing', () => {
   it('Should have access to specific VPCE only bucket policy', () => {
     template.hasResourceProperties('AWS::S3::BucketPolicy', {
       Bucket: {
-        Ref: Match.stringLikeRegexp('SecureSpecificVpcOnlyBucket'),
+        Ref: Match.stringLikeRegexp('SecureVpcBucket'),
       },
       PolicyDocument: {
         Version: '2012-10-17',
@@ -56,7 +56,7 @@ describe('SecureSpecificVpcOnlyBucket Testing', () => {
             Resource: [
               {
                 'Fn::GetAtt': [
-                  Match.stringLikeRegexp('SecureSpecificVpcOnlyBucket'),
+                  Match.stringLikeRegexp('SecureVpcBucket'),
                   'Arn',
                 ],
               },
@@ -66,7 +66,7 @@ describe('SecureSpecificVpcOnlyBucket Testing', () => {
                   [
                     {
                       'Fn::GetAtt': [
-                        Match.stringLikeRegexp('SecureSpecificVpcOnlyBucket'),
+                        Match.stringLikeRegexp('SecureVpcBucket'),
                         'Arn',
                       ],
                     },

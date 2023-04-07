@@ -1,15 +1,15 @@
-import { SecureBucket, SecureBucketEncryption } from '@yicr/secure-bucket';
+import { SecureBucket, SecureBucketEncryption } from '@yicr/aws-secure-bucket';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { Construct } from 'constructs';
 
-export interface SecureSpecificVpcOnlyBucketProps {
+export interface SecureVpcBucketProps {
   readonly bucketName?: string;
   readonly vpcEndpointId: string;
 }
 
-export class SecureSpecificVpcOnlyBucket extends SecureBucket {
+export class SecureVpcBucket extends SecureBucket {
 
-  constructor(scope: Construct, id: string, props: SecureSpecificVpcOnlyBucketProps) {
+  constructor(scope: Construct, id: string, props: SecureVpcBucketProps) {
     super(scope, id, {
       bucketName: props.bucketName,
       encryption: SecureBucketEncryption.KMS_MANAGED,
