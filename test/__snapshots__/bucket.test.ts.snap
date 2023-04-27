@@ -85,8 +85,12 @@ Object {
                 },
               },
               "Effect": "Deny",
-              "Principal": Object {
-                "AWS": "*",
+              "NotPrincipal": Object {
+                "AWS": Array [
+                  "arn:aws:iam::123456789012:root",
+                  "arn:aws:sts::123456789012:assumed-role/*/*",
+                  "arn:aws:iam::123456789012:role/*",
+                ],
               },
               "Resource": Array [
                 Object {
