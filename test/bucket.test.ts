@@ -50,8 +50,12 @@ describe('SecureVpcBucket Testing', () => {
           Match.objectEquals({
             Action: 's3:*',
             Effect: 'Deny',
-            Principal: {
-              AWS: '*',
+            NotPrincipal: {
+              AWS: [
+                'arn:aws:iam::123456789012:root',
+                'arn:aws:sts::123456789012:assumed-role/*/*',
+                'arn:aws:iam::123456789012:role/*',
+              ],
             },
             Resource: [
               {
