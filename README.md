@@ -12,6 +12,12 @@ npm install @gammarer/aws-secure-vpc-bucket
 yarn add @gammarer/aws-secure-vpc-bucket
 ```
 
+### Python
+
+```shell
+pip install gammarer.aws-secure-vpc-bucket
+```
+
 ## Example
 
 ### TypeScript
