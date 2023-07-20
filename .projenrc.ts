@@ -4,17 +4,17 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'yicr@users.noreply.github.com',
   cdkVersion: '2.65.0',
   defaultReleaseBranch: 'main',
-  name: '@yicr/aws-secure-vpc-bucket',
+  name: '@gammarer/aws-secure-vpc-bucket',
   description: 'Access from specific VPC Endpoint only Bucket',
   keywords: ['aws', 'cdk', 'aws-cdk', 's3', 'bucket', 'vpc', 'endpoint', 'vpce'],
   projenrcTs: true,
   repositoryUrl: 'https://github.com/yicr/aws-secure-vpc-bucket.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@yicr/aws-secure-bucket',
+    '@gammarer/aws-secure-bucket',
   ],
   peerDeps: [
-    '@yicr/aws-secure-bucket',
+    '@gammarer/aws-secure-bucket',
   ],
   minNodeVersion: '16.0.0',
   workflowNodeVersion: '16.19.1',
@@ -27,6 +27,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['yicr'],
+  },
+  publishToPypi: {
+    distName: 'gammarer.aws-secure-vpc-bucket',
+    module: 'gammarer.aws_secure_vpc_bucket',
   },
 });
 project.synth();

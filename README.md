@@ -7,11 +7,15 @@ Access from specific VPC Endpoint only Bucket
 ### TypeScript
 
 ```shell
-npm install @yicr/aws-secure-vpc-bucket
+npm install @gammarer/aws-secure-vpc-bucket
+# or
+yarn add @gammarer/aws-secure-vpc-bucket
 ```
-or
+
+### Python
+
 ```shell
-yarn add @yicr/aws-secure-vpc-bucket
+pip install gammarer.aws-secure-vpc-bucket
 ```
 
 ## Example
@@ -19,11 +23,11 @@ yarn add @yicr/aws-secure-vpc-bucket
 ### TypeScript
 
 ```shell
-npm install @yicr/aws-secure-vpc-bucket
+npm install @gammarer/aws-secure-vpc-bucket
 ```
 
 ```typescript
-import { SecureSpecificVpcOnlyBucket } from '@yicr/aws-secure-vpc-bucket';
+import { SecureSpecificVpcOnlyBucket } from '@gammarer/aws-secure-vpc-bucket';
 
 new SecureVpcBucket(stack, 'SecureVpcBucket', {
   bucketName: 'example-origin-bucket',

@@ -117,7 +117,7 @@
       "type": "override"
     },
     {
-      "name": "@yicr/aws-secure-bucket",
+      "name": "@gammarer/aws-secure-bucket",
       "type": "peer"
     },
     {
@@ -131,7 +131,7 @@
       "type": "peer"
     },
     {
-      "name": "@yicr/aws-secure-bucket",
+      "name": "@gammarer/aws-secure-bucket",
       "type": "runtime"
     }
   ],
