@@ -28,5 +28,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['yicr'],
   },
+  publishToPypi: {
+    distName: 'gammarer.aws-secure-vpc-bucket',
+    module: 'gammarer.aws_secure_vpc_bucket',
+  },
 });
 project.synth();
