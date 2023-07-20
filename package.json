@@ -1,5 +1,5 @@
 {
-  "name": "@yicr/aws-secure-vpc-bucket",
+  "name": "@gammarer/aws-secure-vpc-bucket",
   "description": "Access from specific VPC Endpoint only Bucket",
   "repository": {
     "type": "git",

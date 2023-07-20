@@ -4,7 +4,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'yicr@users.noreply.github.com',
   cdkVersion: '2.65.0',
   defaultReleaseBranch: 'main',
-  name: '@yicr/aws-secure-vpc-bucket',
+  name: '@gammarer/aws-secure-vpc-bucket',
   description: 'Access from specific VPC Endpoint only Bucket',
   keywords: ['aws', 'cdk', 'aws-cdk', 's3', 'bucket', 'vpc', 'endpoint', 'vpce'],
   projenrcTs: true,
