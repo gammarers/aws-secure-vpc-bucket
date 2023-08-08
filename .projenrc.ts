@@ -11,10 +11,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/yicr/aws-secure-vpc-bucket.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@gammarer/aws-secure-bucket',
+    '@gammarer/aws-secure-bucket@^0.11.3',
   ],
   peerDeps: [
-    '@gammarer/aws-secure-bucket',
+    '@gammarer/aws-secure-bucket@^0.11.3',
   ],
   minNodeVersion: '16.0.0',
   workflowNodeVersion: '16.19.1',
