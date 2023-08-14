@@ -32,5 +32,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
     distName: 'gammarer.aws-secure-vpc-bucket',
     module: 'gammarer.aws_secure_vpc_bucket',
   },
+  publishToMaven: {
+    mavenGroupId: 'com.gammarer',
+    javaPackage: 'com.gammarer.cdk.aws.secure_vpc_bucket',
+    mavenArtifactId: 'aws-secure-vpc-bucket',
+    mavenEndpoint: 'https://s01.oss.sonatype.org',
+  },
 });
 project.synth();
