@@ -18,13 +18,19 @@ yarn add @gammarer/aws-secure-vpc-bucket
 pip install gammarer.aws-secure-vpc-bucket
 ```
 
-## Example
+### Java
 
-### TypeScript
+Add the following to pom.xml:
 
-```shell
-npm install @gammarer/aws-secure-vpc-bucket
+```xml
+<dependency>
+  <groupId>com.gammarer</groupId>
+  <artifactId>aws-secure-vpc-bucket</artifactId>
+</dependency>
 ```
+
+
+## Example
 
 ```typescript
 import { SecureSpecificVpcOnlyBucket } from '@gammarer/aws-secure-vpc-bucket';
