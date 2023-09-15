@@ -3,7 +3,7 @@
   "description": "Access from specific VPC Endpoint only Bucket",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yicr/aws-secure-vpc-bucket.git"
+    "url": "https://github.com/gammarer/aws-secure-vpc-bucket.git"
   },
   "scripts": {
     "build": "npx projen build",
