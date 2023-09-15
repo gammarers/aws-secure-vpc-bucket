@@ -26,6 +26,12 @@ yarn add @gammarer/aws-secure-vpc-bucket
 pip install gammarer.aws-secure-vpc-bucket
 ```
 
+### C# / .NET
+
+```shell
+dotnet add package Gammarer.CDK.AWS.SecureVpcBucket
+```
+
 ### Java
 
 Add the following to pom.xml:
