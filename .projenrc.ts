@@ -10,13 +10,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'Access from specific VPC Endpoint only Bucket',
   keywords: ['aws', 'cdk', 'aws-cdk', 's3', 'bucket', 'vpc', 'endpoint', 'vpce'],
   projenrcTs: true,
-  repositoryUrl: 'https://github.com/yicr/aws-secure-vpc-bucket.git',
+  repositoryUrl: 'https://github.com/gammarer/aws-secure-vpc-bucket.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@gammarer/aws-secure-bucket@~0.12.4',
+    '@gammarer/aws-secure-bucket@~0.13.0',
   ],
   peerDeps: [
-    '@gammarer/aws-secure-bucket@~0.12.4',
+    '@gammarer/aws-secure-bucket@~0.13.0',
   ],
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '18.17.1',
@@ -39,6 +39,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
     javaPackage: 'com.gammarer.cdk.aws.secure_vpc_bucket',
     mavenArtifactId: 'aws-secure-vpc-bucket',
     mavenEndpoint: 'https://s01.oss.sonatype.org',
+  },
+  publishToNuget: {
+    dotNetNamespace: 'Gammarer.CDK.AWS',
+    packageId: 'Gammarer.CDK.AWS.SecureVpcBucket',
   },
 });
 project.synth();
