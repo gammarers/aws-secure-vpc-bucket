@@ -4,8 +4,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'yicr@users.noreply.github.com',
   cdkVersion: '2.80.0',
   constructsVersion: '10.0.5',
-  typescriptVersion: '5.1.x',
-  jsiiVersion: '5.1.x',
+  typescriptVersion: '5.2.x',
+  jsiiVersion: '5.2.x',
   defaultReleaseBranch: 'main',
   name: '@gammarer/aws-secure-vpc-bucket',
   description: 'Access from specific VPC Endpoint only Bucket',
@@ -14,7 +14,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/gammarer/aws-secure-vpc-bucket.git',
   majorVersion: 1,
   npmAccess: javascript.NpmAccess.PUBLIC,
-  devDeps: [
+  deps: [
     '@gammarer/aws-secure-bucket@~1.1.0',
   ],
   peerDeps: [
