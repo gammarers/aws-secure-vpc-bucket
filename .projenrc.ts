@@ -15,10 +15,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   majorVersion: 1,
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@gammarer/aws-secure-bucket@~1.1.0',
+    '@gammarers/aws-secure-bucket@~1.3.1',
   ],
   peerDeps: [
-    '@gammarer/aws-secure-bucket@~1.1.0',
+    '@gammarers/aws-secure-bucket@~1.3.1',
   ],
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '20.11.0',
