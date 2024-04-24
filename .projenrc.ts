@@ -37,8 +37,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     module: 'gammarers.aws_secure_vpc_bucket',
   },
   publishToNuget: {
-    dotNetNamespace: 'Gammarer.CDK.AWS',
-    packageId: 'Gammarer.CDK.AWS.SecureVpcBucket',
+    dotNetNamespace: 'Gammarers.CDK.AWS',
+    packageId: 'Gammarers.CDK.AWS.SecureVpcBucket',
   },
 });
 project.synth();

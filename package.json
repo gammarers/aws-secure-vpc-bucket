@@ -138,8 +138,8 @@
         "module": "gammarers.aws_secure_vpc_bucket"
       },
       "dotnet": {
-        "namespace": "Gammarer.CDK.AWS",
-        "packageId": "Gammarer.CDK.AWS.SecureVpcBucket"
+        "namespace": "Gammarers.CDK.AWS",
+        "packageId": "Gammarers.CDK.AWS.SecureVpcBucket"
       }
     },
     "tsc": {
