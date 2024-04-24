@@ -36,12 +36,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     distName: 'gammarers.aws-secure-vpc-bucket',
     module: 'gammarers.aws_secure_vpc_bucket',
   },
-  publishToMaven: {
-    mavenGroupId: 'com.gammarer',
-    javaPackage: 'com.gammarer.cdk.aws.secure_vpc_bucket',
-    mavenArtifactId: 'aws-secure-vpc-bucket',
-    mavenEndpoint: 'https://s01.oss.sonatype.org',
-  },
   publishToNuget: {
     dotNetNamespace: 'Gammarer.CDK.AWS',
     packageId: 'Gammarer.CDK.AWS.SecureVpcBucket',
