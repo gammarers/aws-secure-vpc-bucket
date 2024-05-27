@@ -4,8 +4,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'yicr@users.noreply.github.com',
   cdkVersion: '2.80.0',
   constructsVersion: '10.0.5',
-  typescriptVersion: '5.2.x',
-  jsiiVersion: '5.2.x',
+  typescriptVersion: '5.3.x',
+  jsiiVersion: '5.3.x',
   defaultReleaseBranch: 'main',
   name: '@gammarers/aws-secure-vpc-bucket',
   description: 'Access from specific VPC Endpoint only Bucket',
@@ -15,10 +15,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   majorVersion: 1,
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@gammarers/aws-secure-bucket@~1.3.1',
+    '@gammarers/aws-secure-bucket@~1.4.1',
   ],
   peerDeps: [
-    '@gammarers/aws-secure-bucket@~1.3.1',
+    '@gammarers/aws-secure-bucket@~1.4.1',
   ],
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '20.11.0',

@@ -17,8 +17,18 @@ Access from specific VPC Endpoint only Bucket
 
 ```shell
 npm install @gammarers/aws-secure-vpc-bucket
-# or
+```
+or
+```shell
 yarn add @gammarers/aws-secure-vpc-bucket
+```
+or
+```shell
+pnpm add @gammarers/aws-secure-vpc-bucket
+```
+or
+```shell
+bun add @gammarers/aws-secure-vpc-bucket
 ```
 
 ### Python
